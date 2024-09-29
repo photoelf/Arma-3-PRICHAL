@@ -460,6 +460,190 @@ class BLWK_buildableItems
 		onPurchasedPostfix = "_this call BLWK_fnc_itemReclaimer_init";
 		onSold = "_this call BLWK_fnc_itemReclaimer_onSold";
 	};
+	// Transport
+	class B_Heli_Transport_01_F : BLWK_genericBuildItemBase
+	{
+		displayName = "Ghost Hawk";
+		price = 3000;
+		category = TRANSPORT_CATEGORY;
+		attachmentX = 0;
+		attachmentY = 4;
+		attachmentZ = 3;
+		rotation = 0;
+		invincible = 0;
+		detectCollision = 1;
+
+		tooltip = "Spawn a Ghost Hawk helicopter";
+
+		onPurchasedPostfix = "_object setVehicleLock 'UNLOCKED'; clearItemCargoGlobal _object; clearMagazineCargoGlobal _object; clearWeaponCargoGlobal _object; clearBackpackCargoGlobal _object;";
+	};
+
+	class B_APC_Tracked_01_AA_F : BLWK_genericBuildItemBase
+	{
+		displayName = "Cheetah";
+		price = 1000;
+		category = TRANSPORT_CATEGORY;
+		attachmentX = 0;
+		attachmentY = 4;
+		attachmentZ = 3;
+		rotation = 0;
+		invincible = 0;
+		detectCollision = 1;
+
+		tooltip = "Spawn a Cheetah AA vehicle";
+
+		onPurchasedPostfix = "_object setVehicleLock 'UNLOCKED'; clearItemCargoGlobal _object; clearMagazineCargoGlobal _object; clearWeaponCargoGlobal _object; clearBackpackCargoGlobal _object;";
+	};
+
+	class CUP_B_BMP_HQ_CDF : BLWK_genericBuildItemBase
+	{
+		price = 1000;
+		category = TRANSPORT_CATEGORY;
+		attachmentX = 0;
+		attachmentY = 4;
+		attachmentZ = 3;
+		rotation = 0;
+		invincible = 0;
+		detectCollision = 1;
+		tooltip = "CDF BMP HQ";
+	};
+
+	class CUP_B_ZSU23_Afghan_CDF : BLWK_genericBuildItemBase
+	{
+		price = 2000;
+		category = TRANSPORT_CATEGORY;
+		attachmentX = 0;
+		attachmentY = 4;
+		attachmentZ = 3;
+		rotation = 0;
+		invincible = 0;
+		detectCollision = 1;
+		tooltip = "CDF ZSU-23";
+	};
+
+	class CUP_B_T72_CDF : BLWK_genericBuildItemBase
+	{
+		price = 3000;
+		category = TRANSPORT_CATEGORY;
+		attachmentX = 0;
+		attachmentY = 4;
+		attachmentZ = 3;
+		rotation = 0;
+		invincible = 0;
+		detectCollision = 1;
+		tooltip = "CDF T-72";
+	};
+
+	class SPE_FlaK_36 : BLWK_genericBuildItemBase
+	{
+		price = 1000;
+		category = TRANSPORT_CATEGORY;
+		attachmentX = 0;
+		attachmentY = 4;
+		attachmentZ = 3;
+		rotation = 0;
+		invincible = 0;
+		detectCollision = 1;
+		tooltip = "FlaK 36";
+	};
+
+	class rhsgref_cdf_b_AGS30_TriPod : BLWK_genericBuildItemBase
+	{
+		price = 1000;
+		category = TRANSPORT_CATEGORY;
+		attachmentX = 0;
+		attachmentY = 4;
+		attachmentZ = 3;
+		rotation = 0;
+		invincible = 0;
+		detectCollision = 1;
+		tooltip = "CDF AGS-30 on Tripod";
+	};
+
+	// Supplies
+	class CSLA_ammobox_launchers : BLWK_genericBuildItemBase
+	{
+		price = 500;
+		category = SUPPLIES_CATEGORY;
+		attachmentY = 2;
+		keepInventory = 1;
+		tooltip = "CSLA Launchers Ammo Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillCSLALaunchersBox;";
+	};
+
+	class CSLA_ammobox_ammunition : CSLA_ammobox_launchers
+	{
+		tooltip = "CSLA Ammunition Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillCSLAAmmunitionBox;";
+	};
+
+	class CSLA_ammobox_firearms : CSLA_ammobox_launchers
+	{
+		tooltip = "CSLA Firearms Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillCSLAFirearmsBox;";
+	};
+
+	class CSLA_ammobox_explosives : CSLA_ammobox_launchers
+	{
+		tooltip = "CSLA Explosives Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillCSLAExplosivesBox;";
+	};
+
+	class CSLA_ammobox_support : CSLA_ammobox_launchers
+	{
+		tooltip = "CSLA Support Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillCSLASupportBox;";
+	};
+
+	class CSLA_ammobox_staticWeapons : CSLA_ammobox_launchers
+	{
+		tooltip = "CSLA Static Weapons Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillCSLAStaticWeaponsBox;";
+	};
+
+	class Box_mas_vdv_Wps_F : BLWK_genericBuildItemBase
+	{
+		price = 1000;
+		category = SUPPLIES_CATEGORY;
+		attachmentY = 2;
+		keepInventory = 1;
+		tooltip = "VDV Weapons Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillVDVWeaponsBox;";
+	};
+
+	class Box_av_rifle : Box_mas_vdv_Wps_F
+	{
+		tooltip = "AV Rifle Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillAVRifleBox;";
+	};
+
+	class Box_av_all_rifle : Box_mas_vdv_Wps_F
+	{
+		tooltip = "AV All Rifle Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillAVAllRifleBox;";
+	};
+
+	class Box_av_all_rifle2 : Box_mas_vdv_Wps_F
+	{
+		tooltip = "AV All Rifle Box 2";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillAVAllRifleBox;";
+	};
+
+	class CUP_VABox_RU : BLWK_genericBuildItemBase
+	{
+		price = 10000;
+		category = SUPPLIES_CATEGORY;
+		attachmentY = 2;
+		keepInventory = 1;
+		tooltip = "CUP Russian Virtual Arsenal Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillCUPRussianVirtualArsenalBox;";
+	};
+
+	class SMA_Weapon_Box : CUP_VABox_RU
+	{
+		tooltip = "SMA Weapon Box";
+		onPurchasedPostfix = "_object call BLWK_fnc_fillSMAWeaponBox;";
+	};
 
 	#include "OPTRE Build Items.hpp"
 	#include "RHS Build Items.hpp"

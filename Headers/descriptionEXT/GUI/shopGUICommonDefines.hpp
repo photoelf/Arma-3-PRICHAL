@@ -64,6 +64,8 @@
 #define BUNKERS_CATEGORY "Bunkers"
 #define VERTICAL_CATEGORY "Ramps & Stairs"
 #define TURRETS_CATEGORY "Turrets"
+#define TRANSPORT_CATEGORY "Transport"
+#define SUPPLIES_CATEGORY "Supplies"
 #define STORAGE_CATEGORY "Storage"
 #define BUILDINGS_CATEGORY "Buildings"
 #define HBARR_CATEGORY "H-Barriers"

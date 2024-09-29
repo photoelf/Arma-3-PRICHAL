@@ -1,9 +1,9 @@
-onLoadMission = "Arma 3 Survival";
+onLoadMission = "Arma 3 PRICHAL";
 onLoadIntro = "Defend The Position";
-onLoadName = "Arma 3 Survival";
-briefingName = "Arma 3 Survival";
+onLoadName = "Arma 3 PRICHAL";
+briefingName = "Arma 3 PRICHAL";
 overviewText = "Survive waves of enemies";
-author = "Hilltop(Willtop) & omNomios (Modified by Ansible2 // Cipher & Spectre)";
+author = "Hilltop(Willtop) & omNomios (Modified by Ansible2 // Cipher & Spectre // photoelf)";
 overviewPicture = "preview.paa";
 
 loadScreen = "preview.paa";
@@ -18,7 +18,7 @@ respawnOnStart = -1;
 respawnDialog = 0;
 
 // saving off
-saving = 0;
+saving = 1;
 
 // FAKs will be consumed on revive
 ReviveRequiredItemsFakConsumed = 1;
@@ -41,7 +41,7 @@ class Header
 {
 	gameType =  Survive;
 	minPlayers =  	 1;
-	maxPlayers = 	 26;
+	maxPlayers = 	 5;
 };
 
 class CfgFunctions
@@ -60,18 +60,18 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "[END]";
-		subtitle = "You Did Not Survive";
-		description = "Game Over";
+		title = "[PECHALITY]";
+		subtitle = "ГАВНО ДОЛЖНО ГОВОРИТЬ ГРОМЧЕ!";
+		description = "Мы все гавно!";
 		pictureBackground = "";
 		picture = "KIA";
 		pictureColor[] = {0.6,0.1,0.2,1};
 	};
 	class End2
 	{
-		title = "[SAFE]";
-		subtitle = "You Won";
-		description = "You Survived";
+		title = "[PRICHALILI]";
+		subtitle = "ВСЕ МОЛОДЦЫ!";
+		description = "Спокойной ночи!";
 		pictureBackground = "";
 		picture = "b_inf";
 		pictureColor[] = {0.0,0.3,0.6,1};
@@ -124,6 +124,7 @@ class CfgNotifications
 class RscTitles
 {
 	#include "Headers\descriptionEXT\GUI\infoPanel.hpp"
+	#include "Headers\descriptionEXT\GUI\compassHUD.hpp"
 };
 
 #include "Headers\descriptionEXT\GUI\shopGUI.hpp"

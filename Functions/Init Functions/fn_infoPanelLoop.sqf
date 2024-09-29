@@ -21,7 +21,7 @@ Examples:
 
 Author(s):
 	Hilltop(Willtop) & omNomios,
-	Modified by: Ansible2 // Cipher
+	Modified by: Ansible2 // Cipher // photoelf
 ---------------------------------------------------------------------------- */
 scriptName "BLWK_fnc_infoPanelLoop";
 
@@ -86,10 +86,20 @@ private _fn_updateInBetweenWaves = {
 	_inBetweenWaves = BLWK_inBetweenWaves;
 };
 
+// Total Enemies
+private _totalEnemies = {side _x == east} count allUnits;
+private _enemiesCtrl = _infoPanelDisplay displayCtrl INFO_PANEL_TOTAL_ENEMIES_IDC;
+private _fn_updateEnemies = {
+	_enemiesCtrl ctrlSetText format ["Enemies: %1", {side _x == east} count allUnits];
+	_enemiesCtrl ctrlCommit 0;
+	_totalEnemies = {side _x == east} count allUnits;
+};
+
 call _fn_updatePlayerPoints;
 call _fn_updateRespawnTickets;
 call _fn_updateCurrentWave;
 call _fn_updateInBetweenWaves;
+call _fn_updateEnemies;
 
 while {sleep 2; true} do {
 	if (_playerPoints isNotEqualTo BLWK_playerKillPoints) then {
@@ -103,5 +113,8 @@ while {sleep 2; true} do {
 	};
 	if (_inBetweenWaves isNotEqualTo BLWK_inBetweenWaves) then {
 		call _fn_updateInBetweenWaves
+	};
+	if (_totalEnemies != ({side _x == east} count allUnits)) then {
+		call _fn_updateEnemies;
 	};
 };

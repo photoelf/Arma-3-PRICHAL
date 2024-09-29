@@ -29,10 +29,10 @@ class BLWK_infoPanel {
 			x = 0.0136719 * safezoneW + safezoneX;
 			y = 0.0208333 * safezoneH + safezoneY;
 			w = 0.0527344 * safezoneW;
-			h = 0.03125 * safezoneH;
+			h = 0.025 * safezoneH;
 			onLoad = "(_this select 0) ctrlSetText (name player)";
 			colorBackground[] = {-1,-1,-1,-1};
-			sizeEx = 0.03125 * safezoneH;
+			sizeEx = 0.025 * safezoneH;
 		};
 		// player points
 		class BLWK_infoPanel_playerPoints_shower: RscText
@@ -42,9 +42,9 @@ class BLWK_infoPanel {
 			x = 0.0136719 * safezoneW + safezoneX;
 			y = 0.0729166 * safezoneH + safezoneY;
 			w = 0.0527344 * safezoneW;
-			h = 0.03125 * safezoneH;
+			h = 0.025 * safezoneH;
 			colorBackground[] = {-1,-1,-1,-1};
-			sizeEx = 0.03125 * safezoneH;
+			sizeEx = 0.025 * safezoneH;
 		};
 
 		// wave number
@@ -55,9 +55,9 @@ class BLWK_infoPanel {
 			x = 0.0664062 * safezoneW + safezoneX;
 			y = 0.0520833 * safezoneH + safezoneY;
 			w = 0.0644531 * safezoneW;
-			h = 0.0208333 * safezoneH;
+			h = 0.025 * safezoneH;
 			colorBackground[] = {-1,-1,-1,-1};
-			sizeEx = 0.75 * (0.0208333 * safezoneH);
+			sizeEx = 0.75 * (0.025 * safezoneH);
 		};
 		class BLWK_infoPanel_wave_number: RscText
 		{
@@ -66,9 +66,9 @@ class BLWK_infoPanel {
 			x = 0.130859 * safezoneW + safezoneX;
 			y = 0.0520833 * safezoneH + safezoneY;
 			w = 0.0234375 * safezoneW;
-			h = 0.0208333 * safezoneH;
+			h = 0.025 * safezoneH;
 			colorBackground[] = {-1,-1,-1,-1};
-			sizeEx = 0.0208333 * safezoneH;
+			sizeEx = 0.025 * safezoneH;
 		};
 		// respawns
 		class BLWK_infoPanel_respawnsLeft_number: RscText
@@ -78,9 +78,9 @@ class BLWK_infoPanel {
 			x = 0.130859 * safezoneW + safezoneX;
 			y = 0.0833333 * safezoneH + safezoneY;
 			w = 0.0234375 * safezoneW;
-			h = 0.0208333 * safezoneH;
+			h = 0.025 * safezoneH;
 			colorBackground[] = {-1,-1,-1,-1};
-			sizeEx = 0.0208333 * safezoneH;
+			sizeEx = 0.025 * safezoneH;
 		};
 		class BLWK_infoPanel_respawnsLeft_static: RscText
 		{
@@ -89,9 +89,9 @@ class BLWK_infoPanel {
 			x = 0.0664062 * safezoneW + safezoneX;
 			y = 0.0833333 * safezoneH + safezoneY;
 			w = 0.0644531 * safezoneW;
-			h = 0.0208333 * safezoneH;
+			h = 0.025 * safezoneH;
 			colorBackground[] = {-1,-1,-1,-1};
-			sizeEx = 0.75 * (0.0208333 * safezoneH);
+			sizeEx = 0.75 * (0.025 * safezoneH);
 		};
 		// wave status
 		class BLWK_infoPanel_waveStatus_static: RscText
@@ -101,9 +101,9 @@ class BLWK_infoPanel {
 			x = 0.0664062 * safezoneW + safezoneX;
 			y = 0.0208333 * safezoneH + safezoneY;
 			w = 0.0410156 * safezoneW;
-			h = 0.0208333 * safezoneH;
+			h = 0.025 * safezoneH;
 			colorBackground[] = {-1,-1,-1,-1};
-			sizeEx = 0.75 * (0.0208333 * safezoneH);
+			sizeEx = 0.75 * (0.025 * safezoneH);
 		};
 		class BLWK_infoPanel_waveStatus_shower: RscText
 		{
@@ -112,9 +112,19 @@ class BLWK_infoPanel {
 			x = 0.107422 * safezoneW + safezoneX;
 			y = 0.0208333 * safezoneH + safezoneY;
 			w = 0.046875 * safezoneW;
-			h = 0.0208333 * safezoneH;
+			h = 0.025 * safezoneH;
 			colorBackground[] = {-1,-1,-1,-1};
-			sizeEx = 0.75 * (0.0208333 * safezoneH);
+			sizeEx = 0.75 * (0.025 * safezoneH);
+		};
+		class BLWK_infoPanel_enemies: RscText
+		{
+			idc = INFO_PANEL_TOTAL_ENEMIES_IDC;
+			text = "Enemies: 0";
+			x = 0.0136719 * safezoneW + safezoneX;
+			y = 0.104166 * safezoneH + safezoneY;
+			w = 0.07 * safezoneW;
+			h = 0.0208333 * safezoneH;
+			sizeEx = 0.018 * safezoneH;
 		};
 	};
 };

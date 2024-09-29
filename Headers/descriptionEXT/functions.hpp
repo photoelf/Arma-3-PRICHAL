@@ -158,6 +158,10 @@ class BLWK
 		{};
 		class setupFactionMaps
 		{};
+		class initCompassHUD
+		{
+			postInit = 1;
+		};
 	};
 
 
@@ -529,6 +533,11 @@ class BLWK
 		{};
 		class startWaveCountdown
 		{};
+	};
+	class Save {
+		file = "Functions\Save";
+		class saveGame {};
+		class loadGame {};
 	};
 };
 

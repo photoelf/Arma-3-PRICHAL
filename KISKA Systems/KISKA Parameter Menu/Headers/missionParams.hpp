@@ -66,7 +66,6 @@ class on_off_paramBase : yes_no_paramBase
 	textFalse = "OFF";
 };
 
-
 class KISKA_missionParams
 {
 	ProfileVarName = "BLWK_survivalParamProfiles"; // A profilenamespace variable that will hold mission parameter profiles
@@ -219,6 +218,13 @@ class KISKA_missionParams
 			default = 25;
 			onChanged = "0 setLightnings (_this select 0)";
 			initScript = "0 setLightnings (_this select 0)";
+		};
+		class BLWK_fog
+		{
+			title = "Fog";
+			values[] = {0};
+			texts[] = {"Disabled"};
+			default = 0;
 		};
 	};
 
@@ -624,6 +630,18 @@ class KISKA_missionParams
 			title = "Starting Vest Classname";
 			tooltip = "This is the class of the vest that players will spawn with.";
 			default = "V_RangeMaster_Belt";
+		};
+		class BLWK_playersStartWith_backpack : yes_no_paramBase
+		{
+			title = "Players Start With A Backpack";
+			tooltip = "Players will be given a backpack initially and after they respawn";
+			default = DEFAULT_FALSE;
+		};
+		class BLWK_defaultBackpackClass : editParamBase
+		{
+			title = "Starting Backpack Classname";
+			tooltip = "This is the class of the backpack that players will spawn with.";
+			default = "B_Carryall_blk";
 		};
 	};
 

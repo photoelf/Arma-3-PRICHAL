@@ -18,7 +18,7 @@ Examples:
     (end)
 
 Author(s):
-	Ansible2 // Cipher
+	Ansible2 // Cipher // photoelf
 ---------------------------------------------------------------------------- */
 scriptName "BLWK_fnc_addPlayerItems";
 
@@ -64,4 +64,8 @@ if (BLWK_playersStartWith_mineDetector) then {
 if (BLWK_uniformClass isNotEqualTo "") then {
 	player forceAddUniform BLWK_uniformClass;
 	removeHeadgear _player;
+};
+
+if (BLWK_playersStartWith_backpack) then {
+	_player addBackpack BLWK_defaultBackpackClass;
 };

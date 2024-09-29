@@ -89,3 +89,5 @@ waitUntil {
 
 sleep 1;
 [_player] joinSilent BLWK_playerGroup;
+
+[] call BLWK_fnc_initCompassHUD;
