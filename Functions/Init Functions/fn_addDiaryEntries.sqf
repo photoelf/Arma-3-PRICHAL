@@ -80,13 +80,6 @@ if !(hasInterface) exitWith {};
 ] call BLWK_fnc_addSurvivalDiaryEntry;
 
 
-[
-	[
-		"Music Manager Open",
-		"<execute expression='openMap false; call BLWK_fnc_openMusicManager;'>OPEN Music Manager</execute>"
-	]
-] call BLWK_fnc_addSurvivalDiaryEntry;
-
 
 [
 	[

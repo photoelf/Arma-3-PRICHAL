@@ -188,11 +188,11 @@ class Mission
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
 		startWeather=0.15822819;
-		startFog=0.096915029;
-		startWind=0.1;
-		startWaves=0.1;
+		startFog=0;
+		startWind=0;
+		startWaves=0;
 		forecastWeather=0.15822819;
-		forecastFog=0.16019334;
+		forecastFog=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		rainForced=1;

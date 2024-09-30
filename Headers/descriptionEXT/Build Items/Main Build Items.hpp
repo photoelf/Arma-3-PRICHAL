@@ -467,7 +467,7 @@ class BLWK_buildableItems
 		price = 3000;
 		category = TRANSPORT_CATEGORY;
 		attachmentX = 0;
-		attachmentY = 4;
+		attachmentY = 10;
 		attachmentZ = 3;
 		rotation = 0;
 		invincible = 0;
@@ -484,7 +484,7 @@ class BLWK_buildableItems
 		price = 1000;
 		category = TRANSPORT_CATEGORY;
 		attachmentX = 0;
-		attachmentY = 4;
+		attachmentY = 10;
 		attachmentZ = 3;
 		rotation = 0;
 		invincible = 0;
@@ -500,7 +500,7 @@ class BLWK_buildableItems
 		price = 1000;
 		category = TRANSPORT_CATEGORY;
 		attachmentX = 0;
-		attachmentY = 4;
+		attachmentY = 10;
 		attachmentZ = 3;
 		rotation = 0;
 		invincible = 0;
@@ -513,7 +513,7 @@ class BLWK_buildableItems
 		price = 2000;
 		category = TRANSPORT_CATEGORY;
 		attachmentX = 0;
-		attachmentY = 4;
+		attachmentY = 10;
 		attachmentZ = 3;
 		rotation = 0;
 		invincible = 0;
@@ -526,7 +526,7 @@ class BLWK_buildableItems
 		price = 3000;
 		category = TRANSPORT_CATEGORY;
 		attachmentX = 0;
-		attachmentY = 4;
+		attachmentY = 10;
 		attachmentZ = 3;
 		rotation = 0;
 		invincible = 0;
@@ -536,8 +536,8 @@ class BLWK_buildableItems
 
 	class SPE_FlaK_36 : BLWK_genericBuildItemBase
 	{
-		price = 1000;
-		category = TRANSPORT_CATEGORY;
+		price = 2000;
+		category = TURRETS_CATEGORY;
 		attachmentX = 0;
 		attachmentY = 4;
 		attachmentZ = 3;
@@ -550,7 +550,7 @@ class BLWK_buildableItems
 	class rhsgref_cdf_b_AGS30_TriPod : BLWK_genericBuildItemBase
 	{
 		price = 1000;
-		category = TRANSPORT_CATEGORY;
+		category = TURRETS_CATEGORY;
 		attachmentX = 0;
 		attachmentY = 4;
 		attachmentZ = 3;
@@ -603,7 +603,7 @@ class BLWK_buildableItems
 
 	class Box_mas_vdv_Wps_F : BLWK_genericBuildItemBase
 	{
-		price = 1000;
+		price = 5000;
 		category = SUPPLIES_CATEGORY;
 		attachmentY = 2;
 		keepInventory = 1;
@@ -637,12 +637,6 @@ class BLWK_buildableItems
 		keepInventory = 1;
 		tooltip = "CUP Russian Virtual Arsenal Box";
 		onPurchasedPostfix = "_object call BLWK_fnc_fillCUPRussianVirtualArsenalBox;";
-	};
-
-	class SMA_Weapon_Box : CUP_VABox_RU
-	{
-		tooltip = "SMA Weapon Box";
-		onPurchasedPostfix = "_object call BLWK_fnc_fillSMAWeaponBox;";
 	};
 
 	#include "OPTRE Build Items.hpp"

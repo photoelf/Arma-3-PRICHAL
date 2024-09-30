@@ -176,49 +176,6 @@ class BLWK
 		{};
 	};
 
-	class MusicManager
-	{
-		file = "Functions\Music Manager";
-		class musicManager_markAvailableMusicListEntry
-		{};
-		class musicManager_playMusic
-		{};
-		class musicManager_setPlayListServer
-		{};
-		class musicManager_updateLoadCombo
-		{};
-		class musicManager_addSongToPlaylist
-		{};
-		class musicManager_removeSongFromPlaylist
-		{};
-		class musicManagerOnLoad
-		{};
-		class musicManagerOnLoad_addAndRemoveButtons
-		{};
-		class musicManagerOnLoad_availableMusicList
-		{};
-		class musicManagerOnLoad_closeButton
-		{};
-		class musicManagerOnLoad_deleteButton
-		{};
-		class musicManagerOnLoad_loadControls
-		{};
-		class musicManagerOnLoad_pauseAndPlayButtons
-		{};
-		class musicManagerOnLoad_savePlaylistControls
-		{};
-		class musicManagerOnLoad_systemOnOffCombo
-		{};
-		class musicManagerOnLoad_timelineSlider
-		{};
-		class musicManagerOnLoad_trackSpacingControls
-		{};
-		class musicManagerOnLoad_volumeSlider
-		{};
-		class openMusicManager
-		{};
-	};
-
 	class Other
 	{
 		file = "Functions\Other";

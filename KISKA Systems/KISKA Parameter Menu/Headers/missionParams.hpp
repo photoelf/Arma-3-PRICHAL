@@ -219,12 +219,16 @@ class KISKA_missionParams
 			onChanged = "0 setLightnings (_this select 0)";
 			initScript = "0 setLightnings (_this select 0)";
 		};
-		class BLWK_fog
+		class BLWK_fog : sliderParamBase
 		{
 			title = "Fog";
 			values[] = {0};
 			texts[] = {"Disabled"};
+			min = 0;
+			max = 100;
 			default = 0;
+			onChanged = "0 setFog (_this select 0)";
+			initScript = "0 setFog (_this select 0)";
 		};
 	};
 

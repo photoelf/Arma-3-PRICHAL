@@ -44,19 +44,6 @@ if (isServer) then {
     };
     publicVariable "BLWK_theAIHandlerEntity";
 
-    private _sortedMusicClasses = [
-        "true" configClasses (configFile >> "CfgMusic"),
-        [],
-        { 
-            private _songDisplayName = getText(_x >> "name");
-            if (_songDisplayName isEqualTo "") then {
-                _songDisplayName = configName _x;
-            };
-            _songDisplayName
-        }
-    ] call BIS_fnc_sortBy;
-    missionNamespace setVariable ["BLWK_sortedServerMusicConfigs",_sortedMusicClasses,true];
-
 
     // number should never be zero, but it can be for some time until the server has initialized
     waitUntil {

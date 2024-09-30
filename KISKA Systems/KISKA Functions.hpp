@@ -62,38 +62,6 @@ class KISKA
 		class randomMusic
 		{};
 	};
-	class KISKA_music
-	{
-		file = "KISKA Systems\KISKA Music Functions";
-		class getLatestPlayedMusicID
-		{};
-		class getMusicDuration
-		{};
-		class getMusicFromClass
-		{};
-		class getPlayingMusic
-		{};
-		class isMusicPlaying
-		{};
-		class musicEventHandlers
-		{
-			preInit = 1;
-		};
-		class musicStartEvent
-		{};
-		class musicStopEvent
-		{};
-		class playMusic
-		{};
-		class stopMusic
-		{};
-	};
-	class KISKA_sounds
-	{
-		file = "KISKA Systems\KISKA Sound Functions";
-		class battleSound
-		{};
-	};
 	class KISKA_utillities
 	{
 		file = "KISKA Systems\KISKA Utility Functions";

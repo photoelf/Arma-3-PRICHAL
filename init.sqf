@@ -1,16 +1,15 @@
 if (isServer) then {
-    private _loaded = [] call BLWK_fnc_loadGame;
-    if (!_loaded) then {
-        // Инициализация новой игры, если сохранение не найдено
-        [] call BLWK_fnc_prepareGlobals;
+    [] spawn {
+        waitUntil {!isNull (allPlayers select 0)};
+        _firstPlayer = allPlayers select 0;
+        _curator = createGroup sideLogic createUnit ["ModuleCurator_F", [0,0,0], [], 0, "NONE"];
+        _firstPlayer assignCurator _curator;
+        ["Zeus assigned to %1", name _firstPlayer] remoteExec ["systemChat", 0];
     };
 };
 
-// get rid of any old saaved mission params
+// get rid of any old saved mission params
 if (profileNamespace getVariable ["BLWK_savedMissionParameters",[]] isNotEqualTo []) then {
     profileNamespace setVariable ["BLWK_savedMissionParameters",nil];
     saveProfileNamespace;
 };
-// Disable fog
-0 setFog 0;
-forceWeatherChange;
